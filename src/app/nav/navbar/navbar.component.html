@@ -1,0 +1,38 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!--Nav-->
+    <div class="container-fluid">
+    <!--Container-fluid-->
+
+      <a class="navbar-brand " href="#"><img class="img-fluid" width="30" src="../assets/img/batman.png" alt=""> Gifs</a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+  <!--Collapse-->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2  mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Powered by Eduardo Flores</a>
+          </li>
+        </ul>
+        <!--Historial-->
+        <div class="d-flex">
+          <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
+           
+            <li class="nav-item" (click)="buscar(item)" *ngFor="let item of historial">
+              <a class="nav-link" href="#">{{item}}</a>
+            </li>
+
+          </ul>
+        </div>
+        <!--End Historial-->
+
+      </div>
+      <!--End collapse-->
+    </div>
+    <!--end Container-fluid-->
+  </nav>
+  <!--End Nav-->
