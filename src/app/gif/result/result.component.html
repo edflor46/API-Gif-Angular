@@ -1,15 +1,15 @@
-<div class="d-flex">
+
 
   <!--Card-->
   <div class="row mt-3 mb-3 p-2 ">
   
-    <div class="col-md-4 mt-2 mb-2 animate__animated animate__fadeIn" *ngFor="let gif of resultados">
+    <div class="col-md-4 col-sm-4 mt-2 mb-2 animate__animated animate__fadeIn" *ngFor="let gif of resultados">
       <div class="card">
-        <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-image-top">
+        <img  [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-image-top">
         <div class="card-body">
           <p class="card-text">{{gif.title}}</p>
         </div>
       </div>
     </div>
     <!--Card-->
-</div>
+
